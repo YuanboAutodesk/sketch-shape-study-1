@@ -1,0 +1,111 @@
+{
+  "object": "bicycle",
+  "count": 5,
+  "components": [
+    {
+      "index": 1,
+      "slug": "rear_wheel",
+      "name": "Rear Wheel",
+      "description": "The back wheel of the bicycle",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_rear_wheel.py",
+      "stl": "sub_program/01_rear_wheel.stl",
+      "bbox": [
+        -700.0,
+        -30.0,
+        0.0,
+        -100.0,
+        30.0,
+        600.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "front_wheel",
+      "name": "Front Wheel",
+      "description": "The front wheel of the bicycle",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_front_wheel.py",
+      "stl": "sub_program/02_front_wheel.stl",
+      "bbox": [
+        300.0,
+        -30.0,
+        0.0,
+        900.0,
+        30.0,
+        600.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "frame",
+      "name": "Frame",
+      "description": "The main chassis of the bicycle",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_frame.py",
+      "stl": "sub_program/03_frame.stl",
+      "bbox": [
+        -100.0,
+        -20.0,
+        235.0,
+        300.0,
+        20.0,
+        764.8
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "seat",
+      "name": "Seat",
+      "description": "The saddle of the bicycle",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_seat.py",
+      "stl": "sub_program/04_seat.stl",
+      "bbox": [
+        -354.0,
+        -40.0,
+        701.0,
+        -100.0,
+        40.0,
+        797.8
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "handlebars",
+      "name": "Handlebars",
+      "description": "The steering handles",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_handlebars.py",
+      "stl": "sub_program/05_handlebars.stl",
+      "bbox": [
+        225.0,
+        -208.0,
+        764.8,
+        414.0,
+        208.0,
+        1060.0
+      ]
+    }
+  ]
+}

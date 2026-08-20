@@ -1,0 +1,111 @@
+{
+  "object": "SUV",
+  "count": 5,
+  "components": [
+    {
+      "index": 1,
+      "slug": "main_body",
+      "name": "Main Body",
+      "description": "Lower body section including hood and trunk",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_main_body.py",
+      "stl": "sub_program/01_main_body.stl",
+      "bbox": [
+        -1600.0,
+        -950.0,
+        -69.9,
+        1800.0,
+        950.0,
+        950.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "cabin",
+      "name": "Cabin",
+      "description": "Upper passenger compartment with windows and roof",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_cabin.py",
+      "stl": "sub_program/02_cabin.stl",
+      "bbox": [
+        -1600.0,
+        -750.0,
+        950.0,
+        800.0,
+        750.0,
+        1600.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "wheels",
+      "name": "Wheels",
+      "description": "Four cylindrical tires supporting the vehicle",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_wheels.py",
+      "stl": "sub_program/03_wheels.stl",
+      "bbox": [
+        -1350.0,
+        -975.0,
+        50.1,
+        1550.0,
+        975.0,
+        749.9
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "light_bar",
+      "name": "Light Bar",
+      "description": "Emergency light bar mounted on the roof",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_light_bar.py",
+      "stl": "sub_program/04_light_bar.stl",
+      "bbox": [
+        -775.0,
+        -600.0,
+        1580.0,
+        -625.0,
+        600.0,
+        1710.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "front_bumper",
+      "name": "Front Bumper",
+      "description": "Bullbar protecting the front of the vehicle",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_front_bumper.py",
+      "stl": "sub_program/05_front_bumper.stl",
+      "bbox": [
+        1825.0,
+        -850.0,
+        300.0,
+        2000.0,
+        850.0,
+        900.0
+      ]
+    }
+  ]
+}

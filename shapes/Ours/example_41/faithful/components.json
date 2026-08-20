@@ -1,0 +1,111 @@
+{
+  "object": "piano",
+  "count": 5,
+  "components": [
+    {
+      "index": 1,
+      "slug": "main_body",
+      "name": "Main Body",
+      "description": "The large, curved main casing of the piano.",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_main_body.py",
+      "stl": "sub_program/01_main_body.stl",
+      "bbox": [
+        -687.6,
+        -125.0,
+        700.0,
+        650.0,
+        698.1,
+        1000.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "keyboard_box",
+      "name": "Keyboard Box",
+      "description": "The protruding rectangular section at the front containing the keys.",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_keyboard_box.py",
+      "stl": "sub_program/02_keyboard_box.stl",
+      "bbox": [
+        -650.0,
+        -375.0,
+        700.0,
+        650.0,
+        -125.0,
+        850.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "leg_front_left",
+      "name": "Front Left Leg",
+      "description": "The front left supporting leg.",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_leg_front_left.py",
+      "stl": "sub_program/03_leg_front_left.stl",
+      "bbox": [
+        -575.0,
+        -275.0,
+        -0.0,
+        -525.0,
+        -225.0,
+        700.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "leg_front_right",
+      "name": "Front Right Leg",
+      "description": "The front right supporting leg.",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_leg_front_right.py",
+      "stl": "sub_program/04_leg_front_right.stl",
+      "bbox": [
+        525.0,
+        -275.0,
+        -0.0,
+        575.0,
+        -225.0,
+        700.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "leg_back",
+      "name": "Back Leg",
+      "description": "The rear supporting leg.",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_leg_back.py",
+      "stl": "sub_program/05_leg_back.stl",
+      "bbox": [
+        -175.0,
+        475.0,
+        0.0,
+        -125.0,
+        525.0,
+        700.0
+      ]
+    }
+  ]
+}

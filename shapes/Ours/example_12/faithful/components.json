@@ -1,0 +1,216 @@
+{
+  "object": "wooden chair",
+  "count": 10,
+  "components": [
+    {
+      "index": 1,
+      "slug": "backrest",
+      "name": "backrest",
+      "description": "the tall back panel/frame rising vertically from the rear edge of the seat; a single upright rest for the sitter's back",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_backrest.py",
+      "stl": "sub_program/01_backrest.stl",
+      "bbox": [
+        -190.0,
+        160.0,
+        450.0,
+        190.0,
+        190.0,
+        870.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "seat",
+      "name": "seat",
+      "description": "the horizontal seat pan the sitter sits on; a flat slab supported on the four legs, with the backrest rising from its rear edge",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_seat.py",
+      "stl": "sub_program/02_seat.stl",
+      "bbox": [
+        -190.0,
+        -190.0,
+        420.0,
+        190.0,
+        190.0,
+        450.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "leg_front_left",
+      "name": "front-left leg",
+      "description": "the front-left vertical leg running from the floor up to the front-left corner of the seat underside",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_leg_front_left.py",
+      "stl": "sub_program/03_leg_front_left.stl",
+      "bbox": [
+        -190.0,
+        -190.0,
+        -0.0,
+        -160.0,
+        -160.0,
+        420.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "leg_front_right",
+      "name": "front-right leg",
+      "description": "the front-right vertical leg running from the floor up to the front-right corner of the seat underside (mirror of the front-left leg)",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_leg_front_right.py",
+      "stl": "sub_program/04_leg_front_right.stl",
+      "bbox": [
+        160.0,
+        -190.0,
+        -0.0,
+        190.0,
+        -160.0,
+        420.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "leg_back_left",
+      "name": "back-left leg",
+      "description": "the back-left vertical leg running from the floor up to the back-left corner of the seat underside",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_leg_back_left.py",
+      "stl": "sub_program/05_leg_back_left.stl",
+      "bbox": [
+        -190.0,
+        160.0,
+        -0.0,
+        -160.0,
+        190.0,
+        420.0
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "leg_back_right",
+      "name": "back-right leg",
+      "description": "the back-right vertical leg running from the floor up to the back-right corner of the seat underside",
+      "color": [
+        190,
+        152,
+        152
+      ],
+      "sub_program": "sub_program/06_leg_back_right.py",
+      "stl": "sub_program/06_leg_back_right.stl",
+      "bbox": [
+        160.0,
+        160.0,
+        -0.0,
+        190.0,
+        190.0,
+        420.0
+      ]
+    },
+    {
+      "index": 7,
+      "slug": "stretcher_front",
+      "name": "front stretcher",
+      "description": "a horizontal connector bar spanning between the two FRONT legs near the bottom, bracing them together",
+      "color": [
+        171,
+        158,
+        142
+      ],
+      "sub_program": "sub_program/07_stretcher_front.py",
+      "stl": "sub_program/07_stretcher_front.stl",
+      "bbox": [
+        -160.0,
+        -185.0,
+        140.0,
+        160.0,
+        -165.0,
+        160.0
+      ]
+    },
+    {
+      "index": 8,
+      "slug": "stretcher_back",
+      "name": "back stretcher",
+      "description": "a horizontal connector bar spanning between the two BACK legs (back-left to back-right) near the bottom, bracing them together",
+      "color": [
+        142,
+        164,
+        178
+      ],
+      "sub_program": "sub_program/08_stretcher_back.py",
+      "stl": "sub_program/08_stretcher_back.stl",
+      "bbox": [
+        -160.0,
+        165.0,
+        140.0,
+        160.0,
+        185.0,
+        160.0
+      ]
+    },
+    {
+      "index": 9,
+      "slug": "stretcher_left",
+      "name": "left stretcher",
+      "description": "a horizontal connector bar spanning between the two LEFT legs near the bottom, bracing them together",
+      "color": [
+        193,
+        142,
+        116
+      ],
+      "sub_program": "sub_program/09_stretcher_left.py",
+      "stl": "sub_program/09_stretcher_left.stl",
+      "bbox": [
+        -185.0,
+        -160.0,
+        140.0,
+        -165.0,
+        160.0,
+        160.0
+      ]
+    },
+    {
+      "index": 10,
+      "slug": "stretcher_right",
+      "name": "right stretcher",
+      "description": "a horizontal connector bar spanning between the two RIGHT legs (front-right to back-right) near the bottom, bracing them together (mirror of the left stretcher)",
+      "color": [
+        162,
+        156,
+        178
+      ],
+      "sub_program": "sub_program/10_stretcher_right.py",
+      "stl": "sub_program/10_stretcher_right.stl",
+      "bbox": [
+        165.0,
+        -160.0,
+        140.0,
+        185.0,
+        160.0,
+        160.0
+      ]
+    }
+  ]
+}

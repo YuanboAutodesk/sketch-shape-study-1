@@ -1,0 +1,132 @@
+{
+  "object": "sports car",
+  "count": 6,
+  "components": [
+    {
+      "index": 1,
+      "slug": "main_body",
+      "name": "Main Body",
+      "description": "The low-slung, aerodynamic chassis and body of the car",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_main_body.py",
+      "stl": "sub_program/01_main_body.stl",
+      "bbox": [
+        -210.0,
+        -90.0,
+        15.0,
+        220.0,
+        90.0,
+        75.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "canopy",
+      "name": "Canopy",
+      "description": "The cockpit canopy and rear fin structure",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_canopy.py",
+      "stl": "sub_program/02_canopy.stl",
+      "bbox": [
+        -150.0,
+        -60.0,
+        72.0,
+        80.0,
+        60.0,
+        115.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "front_left_wheel",
+      "name": "Front Left Wheel",
+      "description": "The front left wheel",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_front_left_wheel.py",
+      "stl": "sub_program/03_front_left_wheel.stl",
+      "bbox": [
+        95.0,
+        75.0,
+        0.0,
+        165.0,
+        105.0,
+        70.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "front_right_wheel",
+      "name": "Front Right Wheel",
+      "description": "The front right wheel",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_front_right_wheel.py",
+      "stl": "sub_program/04_front_right_wheel.stl",
+      "bbox": [
+        95.0,
+        -105.0,
+        0.0,
+        165.0,
+        -75.0,
+        70.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "rear_left_wheel",
+      "name": "Rear Left Wheel",
+      "description": "The rear left wheel",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_rear_left_wheel.py",
+      "stl": "sub_program/05_rear_left_wheel.stl",
+      "bbox": [
+        -165.0,
+        75.0,
+        0.0,
+        -95.0,
+        105.0,
+        70.0
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "rear_right_wheel",
+      "name": "Rear Right Wheel",
+      "description": "The rear right wheel",
+      "color": [
+        190,
+        152,
+        152
+      ],
+      "sub_program": "sub_program/06_rear_right_wheel.py",
+      "stl": "sub_program/06_rear_right_wheel.stl",
+      "bbox": [
+        -165.0,
+        -105.0,
+        0.0,
+        -95.0,
+        -75.0,
+        70.0
+      ]
+    }
+  ]
+}

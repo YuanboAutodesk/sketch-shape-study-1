@@ -1,0 +1,90 @@
+{
+  "object": "stand mixer",
+  "count": 4,
+  "components": [
+    {
+      "index": 1,
+      "slug": "base",
+      "name": "Base",
+      "description": "The flat bottom section resting on the floor.",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_base.py",
+      "stl": "sub_program/01_base.stl",
+      "bbox": [
+        -117.2,
+        -170.0,
+        0.0,
+        117.2,
+        170.0,
+        40.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "stand",
+      "name": "Stand",
+      "description": "The vertical column at the back connecting base and head.",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_stand.py",
+      "stl": "sub_program/02_stand.stl",
+      "bbox": [
+        -60.0,
+        -185.0,
+        30.0,
+        60.0,
+        -20.0,
+        220.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "head",
+      "name": "Mixing Head",
+      "description": "The horizontal upper body that holds the motor.",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_head.py",
+      "stl": "sub_program/03_head.stl",
+      "bbox": [
+        -65.0,
+        -225.0,
+        35.0,
+        80.0,
+        275.0,
+        325.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "bowl",
+      "name": "Mixing Bowl",
+      "description": "The container where mixing happens.",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_bowl.py",
+      "stl": "sub_program/04_bowl.stl",
+      "bbox": [
+        -115.0,
+        -55.0,
+        40.0,
+        115.0,
+        175.0,
+        200.0
+      ]
+    }
+  ]
+}

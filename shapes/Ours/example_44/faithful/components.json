@@ -1,0 +1,90 @@
+{
+  "object": "truck",
+  "count": 4,
+  "components": [
+    {
+      "index": 1,
+      "slug": "cabin",
+      "name": "Front Cabin",
+      "description": "The front cabin of the truck with a rounded top",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_cabin.py",
+      "stl": "sub_program/01_cabin.stl",
+      "bbox": [
+        60.0,
+        -20.0,
+        25.0,
+        95.9,
+        20.0,
+        55.5
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "cargo_bed",
+      "name": "Cargo Bed",
+      "description": "The rectangular cargo bed at the rear of the truck",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_cargo_bed.py",
+      "stl": "sub_program/02_cargo_bed.stl",
+      "bbox": [
+        10.0,
+        -20.0,
+        25.0,
+        60.0,
+        20.0,
+        35.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "front_wheels",
+      "name": "Front Wheels",
+      "description": "The front set of wheels and axle",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_front_wheels.py",
+      "stl": "sub_program/03_front_wheels.stl",
+      "bbox": [
+        67.5,
+        -25.0,
+        0.0,
+        92.5,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "rear_wheels",
+      "name": "Rear Wheels",
+      "description": "The rear set of wheels and axle",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_rear_wheels.py",
+      "stl": "sub_program/04_rear_wheels.stl",
+      "bbox": [
+        12.5,
+        -25.0,
+        0.0,
+        37.5,
+        25.0,
+        25.0
+      ]
+    }
+  ]
+}

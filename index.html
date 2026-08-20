@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sketch-to-3D comparison study</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <!-- ---------- start: who is answering, then what to do ---------- -->
+  <section id="screen-start" class="screen scroll">
+    <div class="card">
+      <h1>Which 3D shape matches the sketch better?</h1>
+
+      <p>Each round shows a hand sketch and <b>two 3D shapes</b> built from it, <b>A</b> and
+         <b>B</b>. You pick the better one — <b>four times</b>: once for each of three
+         things, and once overall.</p>
+
+      <dl class="criteria-list">
+        <dt>1. Details</dt>
+        <dd>How much of the detail in the sketch is actually modelled — handles, grooves,
+            buttons, holes, chamfers. Is the shape as richly detailed as the drawing?</dd>
+        <dt>2. Proportion</dt>
+        <dd>Whether the parts have the right relative sizes and are in the right places —
+            is anything too tall, too fat, too small, or attached in the wrong spot?</dd>
+        <dt>3. Fidelity</dt>
+        <dd>How faithfully the shape as a whole depicts the object that was sketched, and
+            whether it reads as a real, buildable object.</dd>
+        <dt>4. Overall</dt>
+        <dd>All things considered, which is the better result for this sketch?</dd>
+      </dl>
+
+      <p class="scale-note">Four choices per round: <b>details</b>, <b>proportion</b>,
+        <b>fidelity</b>, <b>overall</b>. They do not have to agree — one shape can win on
+        detail and lose on proportion.</p>
+
+      <ul>
+        <li><b>Drag</b> to rotate a shape, <b>scroll</b> to zoom. Each shape turns on its
+            own — moving one never moves the other.</li>
+        <li>There is no right answer and no time limit. If the two look equally good on
+            something, pick whichever you would rather have.</li>
+        <li><b id="round-count">20</b> shapes to get through, drawn at random from the
+            <span id="pool-count">24</span> in the study — no object comes up twice. Which of
+            the two is on which side changes every time.</li>
+      </ul>
+
+      <h2>Before you start</h2>
+      <p class="muted">Pick a username. It is the only thing identifying you, and it names
+        the results file you send back — so use something you will recognise, and the same
+        one if you ever run this twice. No email address is asked for.</p>
+
+      <label class="field">Username <span class="req">required</span>
+        <input id="in-username" type="text" placeholder="e.g. ada-l" maxlength="40"
+               autocomplete="off" spellcheck="false" required />
+        <span class="hint" id="username-hint">your results arrive as <code>&lt;username&gt;.json</code></span>
+      </label>
+      <label class="field">How much CAD / 3D modelling experience do you have?
+        <span class="opt">optional</span>
+        <select id="in-experience">
+          <option value="">— prefer not to say —</option>
+          <option value="none">none</option>
+          <option value="some">some (occasional 3D printing, hobby CAD)</option>
+          <option value="regular">regular (I model in CAD most weeks)</option>
+          <option value="professional">professional (designer / engineer / researcher)</option>
+        </select>
+      </label>
+
+      <div class="row">
+        <button id="btn-begin" class="primary" disabled>Begin</button>
+      </div>
+      <p class="muted" id="start-status">loading study data…</p>
+    </div>
+  </section>
+
+  <!-- ---------- trial ---------- -->
+  <section id="screen-trial" class="screen hidden">
+    <header class="bar">
+      <div class="progress"><div id="progress-fill"></div></div>
+      <span id="round-label">shape 1 / 20</span>
+      <span id="reveal-note" class="reveal-note hidden">labels visible — operator check, not a
+        participant session</span>
+      <span class="spacer"></span>
+      <span class="muted" id="save-status"></span>
+      <button id="btn-reset-view" class="ghost">reset view</button>
+    </header>
+
+    <main class="stage">
+      <figure class="panel sketch-panel">
+        <figcaption>the sketch</figcaption>
+        <div class="sketch-wrap"><img id="sketch-img" alt="input sketch" /></div>
+        <div class="criteria-key">
+          <p><b>Details</b> — is the fine detail of the drawing modelled?</p>
+          <p><b>Proportion</b> — are the parts the right size, in the right place?</p>
+          <p><b>Fidelity</b> — does it depict this object, as a real buildable thing?</p>
+          <p><b>Overall</b> — all things considered, the better result.</p>
+        </div>
+      </figure>
+
+      <figure class="panel" id="panel-A">
+        <figcaption>shape A<span class="reveal-tag hidden" id="tag-A"></span></figcaption>
+        <div class="viewer" id="viewer-a"></div>
+      </figure>
+
+      <figure class="panel" id="panel-B">
+        <figcaption>shape B<span class="reveal-tag hidden" id="tag-B"></span></figcaption>
+        <div class="viewer" id="viewer-b"></div>
+      </figure>
+
+      <section class="choices" id="choices"></section>
+    </main>
+
+    <footer class="bar bottom">
+      <span class="muted">press <kbd>A</kbd> / <kbd>B</kbd> to answer the highlighted row,
+        <kbd>Enter</kbd> for the next shape, <kbd>←</kbd> to go back</span>
+      <span class="spacer"></span>
+      <span class="muted" id="rate-progress">0 / 4 chosen</span>
+      <button id="btn-back" class="ghost" disabled>← Back</button>
+      <button id="btn-next" class="primary">Next shape</button>
+    </footer>
+  </section>
+
+  <!-- ---------- done ---------- -->
+  <section id="screen-done" class="screen scroll hidden">
+    <div class="card">
+      <h1>Thank you</h1>
+      <p>That is everything — thank you for your time.</p>
+      <p>Download your answers and send the file back to the study organiser.</p>
+      <div class="row">
+        <button id="btn-download" class="primary">Download my results (JSON)</button>
+        <button id="btn-back-done" class="ghost">← Back to the last shape</button>
+        <button id="btn-restart" class="ghost">Run another session</button>
+      </div>
+      <p class="muted" id="done-path"></p>
+    </div>
+  </section>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

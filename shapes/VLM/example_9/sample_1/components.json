@@ -1,0 +1,132 @@
+{
+  "object": "desktop computer setup",
+  "count": 6,
+  "components": [
+    {
+      "index": 1,
+      "slug": "monitor_screen",
+      "name": "Monitor Screen",
+      "description": "The large rectangular display screen",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_monitor_screen.py",
+      "stl": "sub_program/01_monitor_screen.stl",
+      "bbox": [
+        -250.0,
+        160.0,
+        130.0,
+        250.0,
+        290.0,
+        530.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "monitor_neck",
+      "name": "Monitor Neck",
+      "description": "The vertical pillar supporting the monitor screen",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_monitor_neck.py",
+      "stl": "sub_program/02_monitor_neck.stl",
+      "bbox": [
+        -15.0,
+        185.0,
+        0.0,
+        15.0,
+        215.0,
+        130.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "monitor_base",
+      "name": "Monitor Base",
+      "description": "The flat base holding the monitor up on the desk",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_monitor_base.py",
+      "stl": "sub_program/03_monitor_base.stl",
+      "bbox": [
+        -125.0,
+        100.0,
+        0.0,
+        125.0,
+        300.0,
+        10.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "keyboard",
+      "name": "Keyboard",
+      "description": "The flat rectangular keyboard for typing",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_keyboard.py",
+      "stl": "sub_program/04_keyboard.stl",
+      "bbox": [
+        -225.0,
+        -90.0,
+        0.0,
+        225.0,
+        90.0,
+        25.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "mouse",
+      "name": "Mouse",
+      "description": "The rounded computer mouse to the right of the keyboard",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_mouse.py",
+      "stl": "sub_program/05_mouse.stl",
+      "bbox": [
+        270.0,
+        -50.0,
+        0.0,
+        330.0,
+        50.0,
+        30.0
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "mouse_cable",
+      "name": "Mouse Cable",
+      "description": "The wire connecting the mouse towards the monitor",
+      "color": [
+        190,
+        152,
+        152
+      ],
+      "sub_program": "sub_program/06_mouse_cable.py",
+      "stl": "sub_program/06_mouse_cable.stl",
+      "bbox": [
+        131.9,
+        0.0,
+        0.0,
+        311.0,
+        164.1,
+        4.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "object": "pickup truck",
+  "count": 6,
+  "components": [
+    {
+      "index": 1,
+      "slug": "lower_body",
+      "name": "Lower Body",
+      "description": "The main chassis, hood, and rear bed of the pickup truck.",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_lower_body.py",
+      "stl": "sub_program/01_lower_body.stl",
+      "bbox": [
+        -120.0,
+        -50.0,
+        20.0,
+        120.0,
+        50.0,
+        70.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "cabin",
+      "name": "Cabin",
+      "description": "The passenger cabin sitting on top of the lower body.",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_cabin.py",
+      "stl": "sub_program/02_cabin.stl",
+      "bbox": [
+        -37.6,
+        -45.0,
+        70.0,
+        67.6,
+        45.0,
+        110.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "wheel_front_left",
+      "name": "Front Left Wheel",
+      "description": "The front left wheel of the truck.",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_wheel_front_left.py",
+      "stl": "sub_program/03_wheel_front_left.stl",
+      "bbox": [
+        35.0,
+        30.0,
+        -5.0,
+        105.0,
+        50.0,
+        65.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "wheel_front_right",
+      "name": "Front Right Wheel",
+      "description": "The front right wheel of the truck.",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_wheel_front_right.py",
+      "stl": "sub_program/04_wheel_front_right.stl",
+      "bbox": [
+        35.0,
+        -90.0,
+        -5.0,
+        105.0,
+        -70.0,
+        65.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "wheel_rear_left",
+      "name": "Rear Left Wheel",
+      "description": "The rear left wheel of the truck.",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_wheel_rear_left.py",
+      "stl": "sub_program/05_wheel_rear_left.stl",
+      "bbox": [
+        -105.0,
+        30.0,
+        -5.0,
+        -35.0,
+        50.0,
+        65.0
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "wheel_rear_right",
+      "name": "Rear Right Wheel",
+      "description": "The rear right wheel of the truck.",
+      "color": [
+        190,
+        152,
+        152
+      ],
+      "sub_program": "sub_program/06_wheel_rear_right.py",
+      "stl": "sub_program/06_wheel_rear_right.stl",
+      "bbox": [
+        -105.0,
+        -90.0,
+        -5.0,
+        -35.0,
+        -70.0,
+        65.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+ "note": "Each example offers several candidate shapes per side; a round samples one of each. `stl` paths inside components.json are relative to the shape dir.",
+ "sides": {
+  "ours": "Ours",
+  "vlm": "VLM"
+ },
+ "examples": [
+  {
+   "example": "example_1",
+   "source_name": "blender",
+   "object": "stand mixer",
+   "sketch": "sketches/example_1.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_1/faithful",
+     "parts": 4
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_1/sample_0",
+     "parts": 4
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_1/sample_1",
+     "parts": 4
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_1/sample_2",
+     "parts": 4
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_1/sample_3",
+     "parts": 4
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_1/sample_4",
+     "parts": 4
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_5",
+   "source_name": "car_1",
+   "object": "SUV",
+   "sketch": "sketches/example_5.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_5/faithful",
+     "parts": 5
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_5/sample_0",
+     "parts": 5
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_5/sample_1",
+     "parts": 5
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_5/sample_2",
+     "parts": 5
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_5/sample_3",
+     "parts": 5
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_5/sample_4",
+     "parts": 5
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_7",
+   "source_name": null,
+   "object": "office chair",
+   "sketch": "sketches/example_7.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_7/faithful",
+     "parts": 6
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_7/sample_0",
+     "parts": 6
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_9",
+   "source_name": "computer",
+   "object": "desktop computer setup",
+   "sketch": "sketches/example_9.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_9/faithful",
+     "parts": 6
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_9/sample_0",
+     "parts": 6
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_9/sample_1",
+     "parts": 6
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_9/sample_2",
+     "parts": 6
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_9/sample_3",
+     "parts": 6
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_9/sample_4",
+     "parts": 6
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_12",
+   "source_name": null,
+   "object": "wooden chair",
+   "sketch": "sketches/example_12.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_12/faithful",
+     "parts": 10
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_12/sample_0",
+     "parts": 10
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_14",
+   "source_name": "guitar",
+   "object": "string instrument",
+   "sketch": "sketches/example_14.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_14/faithful",
+     "parts": 3
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_14/sample_0",
+     "parts": 3
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_14/sample_1",
+     "parts": 3
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_14/sample_2",
+     "parts": 3
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_14/sample_3",
+     "parts": 3
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_14/sample_4",
+     "parts": 3
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_16",
+   "source_name": "flan",
+   "object": "flanged hub",
+   "sketch": "sketches/example_16.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_16/faithful",
+     "parts": 4
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_16/sample_0",
+     "parts": 4
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_16/sample_1",
+     "parts": 4
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_16/sample_2",
+     "parts": 4
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_16/sample_3",
+     "parts": 4
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_16/sample_4",
+     "parts": 4
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_17",
+   "source_name": "vacuum",
+   "object": "canister vacuum",
+   "sketch": "sketches/example_17.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_17/faithful",
+     "parts": 4
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_17/sample_0",
+     "parts": 4
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_17/sample_1",
+     "parts": 4
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_17/sample_2",
+     "parts": 4
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_17/sample_3",
+     "parts": 4
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_17/sample_4",
+     "parts": 4
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_18",
+   "source_name": null,
+   "object": "sports car",
+   "sketch": "sketches/example_18.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_18/faithful",
+     "parts": 6
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_18/sample_0",
+     "parts": 6
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_18/sample_1",
+     "parts": 6
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_18/sample_2",
+     "parts": 6
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_18/sample_3",
+     "parts": 6
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_18/sample_4",
+     "parts": 6
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_19",
+   "source_name": null,
+   "object": "pickup truck",
+   "sketch": "sketches/example_19.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_19/faithful",
+     "parts": 6
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_19/sample_0",
+     "parts": 6
+    },
+    {
+     "id": "sample_1",
+     "path": "VLM/example_19/sample_1",
+     "parts": 6
+    },
+    {
+     "id": "sample_2",
+     "path": "VLM/example_19/sample_2",
+     "parts": 6
+    },
+    {
+     "id": "sample_3",
+     "path": "VLM/example_19/sample_3",
+     "parts": 6
+    },
+    {
+     "id": "sample_4",
+     "path": "VLM/example_19/sample_4",
+     "parts": 6
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_31",
+   "source_name": null,
+   "object": "bicycle",
+   "sketch": "sketches/example_31.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_31/faithful",
+     "parts": 5
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_31/sample_0",
+     "parts": 5
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_34",
+   "source_name": null,
+   "object": "ship",
+   "sketch": "sketches/example_34.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_34/faithful",
+     "parts": 4
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_34/sample_0",
+     "parts": 4
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_39",
+   "source_name": null,
+   "object": "row of books",
+   "sketch": "sketches/example_39.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_39/faithful",
+     "parts": 5
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_39/sample_0",
+     "parts": 5
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_41",
+   "source_name": null,
+   "object": "piano",
+   "sketch": "sketches/example_41.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_41/faithful",
+     "parts": 5
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_41/sample_0",
+     "parts": 5
+    }
+   ],
+   "has_sketch": true
+  },
+  {
+   "example": "example_44",
+   "source_name": null,
+   "object": "truck",
+   "sketch": "sketches/example_44.png",
+   "ours": [
+    {
+     "id": "faithful",
+     "path": "Ours/example_44/faithful",
+     "parts": 4
+    }
+   ],
+   "vlm": [
+    {
+     "id": "sample_0",
+     "path": "VLM/example_44/sample_0",
+     "parts": 4
+    }
+   ],
+   "has_sketch": true
+  }
+ ],
+ "n_examples": 15,
+ "n_pairings": 47
+}

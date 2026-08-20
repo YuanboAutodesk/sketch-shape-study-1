@@ -1,0 +1,90 @@
+{
+  "object": "canister vacuum",
+  "count": 4,
+  "components": [
+    {
+      "index": 1,
+      "slug": "main_body",
+      "name": "Main Body",
+      "description": "The central chassis of the vacuum cleaner, sloped at the front.",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_main_body.py",
+      "stl": "sub_program/01_main_body.stl",
+      "bbox": [
+        -150.0,
+        -100.0,
+        20.0,
+        150.0,
+        100.0,
+        150.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "left_wheel",
+      "name": "Left Wheel",
+      "description": "Large wheel on the left rear side.",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_left_wheel.py",
+      "stl": "sub_program/02_left_wheel.stl",
+      "bbox": [
+        -175.0,
+        100.0,
+        -5.0,
+        -25.0,
+        125.0,
+        145.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "right_wheel",
+      "name": "Right Wheel",
+      "description": "Large wheel on the right rear side.",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_right_wheel.py",
+      "stl": "sub_program/03_right_wheel.stl",
+      "bbox": [
+        -175.0,
+        -125.0,
+        -5.0,
+        -25.0,
+        -100.0,
+        145.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "hose_port",
+      "name": "Hose Port",
+      "description": "The connection port for the vacuum hose on the sloped front face.",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_hose_port.py",
+      "stl": "sub_program/04_hose_port.stl",
+      "bbox": [
+        43.0,
+        -30.0,
+        88.6,
+        108.0,
+        30.0,
+        133.6
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "object": "row of books",
+  "count": 5,
+  "components": [
+    {
+      "index": 1,
+      "slug": "book_1",
+      "name": "First Book",
+      "description": "Leftmost book in the row",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_book_1.py",
+      "stl": "sub_program/01_book_1.stl",
+      "bbox": [
+        -75.0,
+        -75.0,
+        0.0,
+        -45.0,
+        75.0,
+        200.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "book_2",
+      "name": "Second Book",
+      "description": "Second book from the left",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_book_2.py",
+      "stl": "sub_program/02_book_2.stl",
+      "bbox": [
+        -45.0,
+        -75.0,
+        0.0,
+        -15.0,
+        75.0,
+        200.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "book_3",
+      "name": "Third Book",
+      "description": "Middle book",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_book_3.py",
+      "stl": "sub_program/03_book_3.stl",
+      "bbox": [
+        -15.0,
+        -75.0,
+        0.0,
+        15.0,
+        75.0,
+        200.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "book_4",
+      "name": "Fourth Book",
+      "description": "Second book from the right",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_book_4.py",
+      "stl": "sub_program/04_book_4.stl",
+      "bbox": [
+        15.0,
+        -75.0,
+        0.0,
+        45.0,
+        75.0,
+        200.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "book_5",
+      "name": "Fifth Book",
+      "description": "Rightmost book in the row",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_book_5.py",
+      "stl": "sub_program/05_book_5.stl",
+      "bbox": [
+        45.0,
+        -75.0,
+        0.0,
+        75.0,
+        75.0,
+        200.0
+      ]
+    }
+  ]
+}

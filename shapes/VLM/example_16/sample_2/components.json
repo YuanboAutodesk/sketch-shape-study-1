@@ -1,0 +1,90 @@
+{
+  "object": "flanged hub",
+  "count": 4,
+  "components": [
+    {
+      "index": 1,
+      "slug": "flange_base",
+      "name": "Flange Base",
+      "description": "Large circular plate at the bottom of the hub",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_flange_base.py",
+      "stl": "sub_program/01_flange_base.stl",
+      "bbox": [
+        -60.0,
+        -60.0,
+        0.0,
+        60.0,
+        60.0,
+        10.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "central_hub",
+      "name": "Central Hub",
+      "description": "Raised central cylindrical/conical section on top of the flange",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_central_hub.py",
+      "stl": "sub_program/02_central_hub.stl",
+      "bbox": [
+        -40.0,
+        -40.0,
+        10.0,
+        40.0,
+        40.0,
+        25.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "top_collar",
+      "name": "Top Collar",
+      "description": "Uppermost smaller cylindrical ring",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_top_collar.py",
+      "stl": "sub_program/03_top_collar.stl",
+      "bbox": [
+        -25.0,
+        -25.0,
+        25.0,
+        25.0,
+        25.0,
+        37.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "fasteners",
+      "name": "Fasteners",
+      "description": "Circular bolt heads or studs distributed around the flange base",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_fasteners.py",
+      "stl": "sub_program/04_fasteners.stl",
+      "bbox": [
+        -54.0,
+        -47.6,
+        10.0,
+        54.0,
+        47.6,
+        18.0
+      ]
+    }
+  ]
+}

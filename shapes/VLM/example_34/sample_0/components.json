@@ -1,0 +1,90 @@
+{
+  "object": "ship",
+  "count": 4,
+  "components": [
+    {
+      "index": 1,
+      "slug": "hull",
+      "name": "Hull",
+      "description": "The main body of the ship, pointed at the front.",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_hull.py",
+      "stl": "sub_program/01_hull.stl",
+      "bbox": [
+        -100.0,
+        -20.0,
+        0.0,
+        110.0,
+        20.0,
+        40.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "superstructure",
+      "name": "Superstructure",
+      "description": "The cabin area on top of the hull.",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_superstructure.py",
+      "stl": "sub_program/02_superstructure.stl",
+      "bbox": [
+        -80.0,
+        -20.0,
+        40.0,
+        70.0,
+        20.0,
+        70.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "front_funnel",
+      "name": "Front Funnel",
+      "description": "The forward smokestack.",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_front_funnel.py",
+      "stl": "sub_program/03_front_funnel.stl",
+      "bbox": [
+        -55.0,
+        -15.0,
+        70.0,
+        20.0,
+        15.0,
+        130.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "rear_funnel",
+      "name": "Rear Funnel",
+      "description": "The aft smokestack.",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_rear_funnel.py",
+      "stl": "sub_program/04_rear_funnel.stl",
+      "bbox": [
+        -135.0,
+        -15.0,
+        70.0,
+        -20.0,
+        15.0,
+        130.0
+      ]
+    }
+  ]
+}

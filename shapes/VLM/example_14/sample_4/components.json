@@ -1,0 +1,69 @@
+{
+  "object": "string instrument",
+  "count": 3,
+  "components": [
+    {
+      "index": 1,
+      "slug": "body",
+      "name": "Instrument Body",
+      "description": "The main resonant chamber with a rounded, figure-8 shape",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_body.py",
+      "stl": "sub_program/01_body.stl",
+      "bbox": [
+        -120.0,
+        -200.0,
+        0.0,
+        120.0,
+        195.0,
+        40.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "neck",
+      "name": "Neck",
+      "description": "Long thin piece extending from the body",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_neck.py",
+      "stl": "sub_program/02_neck.stl",
+      "bbox": [
+        -17.5,
+        100.0,
+        27.5,
+        17.5,
+        400.0,
+        42.5
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "headstock",
+      "name": "Headstock",
+      "description": "The top section where tuning pegs would be located",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_headstock.py",
+      "stl": "sub_program/03_headstock.stl",
+      "bbox": [
+        -30.0,
+        400.0,
+        27.5,
+        30.0,
+        500.0,
+        42.5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "object": "office chair",
+  "count": 6,
+  "components": [
+    {
+      "index": 1,
+      "slug": "star_base",
+      "name": "star base",
+      "description": "five-leg star base",
+      "color": [
+        194,
+        192,
+        186
+      ],
+      "sub_program": "sub_program/01_star_base.py",
+      "stl": "sub_program/01_star_base.stl",
+      "bbox": [
+        -190.1,
+        -234.0,
+        0.0,
+        190.1,
+        127.5,
+        100.0
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "column",
+      "name": "column",
+      "description": "short central gas-lift column",
+      "color": [
+        126,
+        146,
+        170
+      ],
+      "sub_program": "sub_program/02_column.py",
+      "stl": "sub_program/02_column.stl",
+      "bbox": [
+        -20.0,
+        -20.0,
+        100.0,
+        20.0,
+        20.0,
+        260.0
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "seat_pan",
+      "name": "seat pan",
+      "description": "horizontal upholstered seat cushion",
+      "color": [
+        201,
+        173,
+        110
+      ],
+      "sub_program": "sub_program/03_seat_pan.py",
+      "stl": "sub_program/03_seat_pan.stl",
+      "bbox": [
+        -250.0,
+        -220.0,
+        260.0,
+        250.0,
+        260.0,
+        340.0
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "backrest",
+      "name": "backrest",
+      "description": "tall ribbed backrest panel",
+      "color": [
+        216,
+        206,
+        150
+      ],
+      "sub_program": "sub_program/04_backrest.py",
+      "stl": "sub_program/04_backrest.stl",
+      "bbox": [
+        -231.0,
+        -333.0,
+        297.0,
+        231.0,
+        -220.0,
+        944.0
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "left_armrest",
+      "name": "left armrest",
+      "description": "thin bent-bar armrest on the LEFT side",
+      "color": [
+        150,
+        170,
+        142
+      ],
+      "sub_program": "sub_program/05_left_armrest.py",
+      "stl": "sub_program/05_left_armrest.stl",
+      "bbox": [
+        -255.0,
+        -220.0,
+        340.0,
+        -210.0,
+        30.0,
+        490.0
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "right_armrest",
+      "name": "right armrest",
+      "description": "thin bent-bar armrest on the RIGHT side, the mirror image of the left armrest",
+      "color": [
+        190,
+        152,
+        152
+      ],
+      "sub_program": "sub_program/06_right_armrest.py",
+      "stl": "sub_program/06_right_armrest.stl",
+      "bbox": [
+        210.0,
+        -220.0,
+        340.0,
+        255.0,
+        30.0,
+        490.0
+      ]
+    }
+  ]
+}

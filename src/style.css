@@ -1,0 +1,273 @@
+:root {
+  --bg: #ffffff;
+  --panel: #f4f5f7;
+  --ink: #16181d;
+  --muted: #6b7280;
+  --line: #e3e5e9;
+  --accent: #1f6feb;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.hidden { display: none !important; }
+.spacer { flex: 1; }
+.muted { color: var(--muted); font-size: 13px; }
+
+/* ---------- start / done cards ---------- */
+.screen { height: 100%; }
+#screen-start, #screen-done {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: auto;
+  padding: 32px 20px;
+}
+
+.card {
+  max-width: 640px;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+.card h1 { margin: 0 0 14px; font-size: 26px; letter-spacing: -0.01em; }
+.card ul { padding-left: 20px; color: #33363d; }
+.card li { margin: 6px 0; }
+
+.field { display: block; margin: 22px 0 16px; font-size: 13px; color: var(--muted); }
+.field input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.row { display: flex; gap: 10px; margin-top: 20px; }
+
+button {
+  font: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 10px 16px;
+}
+button:disabled { opacity: 0.5; cursor: default; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button.ghost { color: var(--muted); }
+
+/* ---------- trial ---------- */
+#screen-trial { display: flex; flex-direction: column; }
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+.bar.bottom { border-bottom: none; border-top: 1px solid var(--line); }
+
+.progress {
+  width: 180px;
+  height: 6px;
+  background: var(--line);
+  border-radius: 99px;
+  overflow: hidden;
+}
+#progress-fill { height: 100%; width: 0; background: var(--accent); transition: width 0.25s ease; }
+
+.toggle { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+
+.stage {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr 1fr;
+  grid-template-rows: minmax(0, 1fr) auto;   /* viewers take the height; choices sit under */
+  gap: 16px;
+  padding: 16px 18px;
+  min-height: 0;
+}
+.sketch-panel { grid-row: 1 / 3; }
+
+.panel {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.panel figcaption {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sketch-wrap {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+  min-height: 0;
+}
+#sketch-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.viewer {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel);
+  min-height: 0;
+  cursor: grab;
+}
+.viewer:active { cursor: grabbing; }
+.viewer canvas { display: block; }
+
+
+kbd {
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+}
+
+@media (max-width: 1100px) {
+  .stage { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-rows: min-content; overflow: auto; }
+  .sketch-panel { grid-row: auto; }
+  .viewer, .sketch-wrap { min-height: 300px; }
+  .choices { grid-column: 1; grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- start card: criteria + participant form ---------- */
+.card h2 { margin: 26px 0 8px; font-size: 16px; letter-spacing: 0.02em; }
+
+.criteria-list { margin: 16px 0; padding: 0; }
+.criteria-list dt { font-weight: 600; margin-top: 12px; }
+.criteria-list dd { margin: 2px 0 0; padding-left: 0; color: #33363d; }
+
+.scale-note {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-size: 13px;
+}
+
+.field { margin: 14px 0; }
+.field select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.field input:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.req, .opt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 6px;
+  border-radius: 99px;
+  margin-left: 4px;
+}
+.req { background: #fdecec; color: #b42318; }
+.opt { background: var(--panel); color: var(--muted); }
+
+/* ---------- the criteria key beside the sketch ---------- */
+.criteria-key {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  font-size: 12px;
+  color: #43464d;
+}
+.criteria-key p { margin: 3px 0; }
+
+/* ---------- the four A-or-B rows under the two viewers ---------- */
+.choices {
+  grid-column: 2 / 4;                 /* spans both shape columns: the question is the PAIR */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: stretch;
+}
+
+.choice-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+/* the row the A/B keys would answer, so the keyboard is never a guess */
+.choice-row.active { border-color: var(--accent); background: #f5f9ff; }
+.choice-row.overall { background: var(--panel); }
+.choice-row.overall.active { background: #f5f9ff; }
+
+.choice-label { display: flex; flex-direction: column; line-height: 1.25; }
+.choice-label b { font-size: 13px; }
+.choice-label span { font-size: 11px; color: var(--muted); }
+
+.choice-btns { display: flex; gap: 8px; }
+.pick {
+  flex: 1;
+  padding: 9px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.pick:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.pick.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ---------- ?reveal=1: which system built which shape ---------- */
+.reveal-tag {
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  background: #eceef2;
+  color: #43464d;
+}
+.reveal-tag.is-ours { background: #e4efff; color: var(--accent); }
+.reveal-note {
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: #fdecec;
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 600;
+}
